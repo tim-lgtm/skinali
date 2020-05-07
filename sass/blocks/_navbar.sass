@@ -1,0 +1,79 @@
+.navbar
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    background-color: #fff
+    z-index: 99
+    &-wrap
+        display: flex
+        // погуглить align-items
+        align-items: center
+        justify-content: space-between
+        min-height: 80px
+    &__mobile , &__landline
+        text-align: right 
+    &__phone
+        display: block
+        margin-bottom: 4px
+        font-size: 19px
+        +bold
+        text-decoration: none
+        color: $text-color
+    &__small-text
+        display: block
+        font-size: 14px
+        color: $text-color-light
+        text-decoration: none
+.menu
+    position: fixed
+    top: 80px
+    z-index: 0
+    padding: 16px 0
+    width: 100%
+    left: 0 
+    background-color: $primary
+    transition: 0.2
+    transform: translateY(-100%)
+    &_active 
+        transform: translateY(0)
+    &__nav
+        display: flex
+        align-items: center 
+        // погуглить
+        justify-content: space-around
+    &__link
+        text-transform: uppercase
+        text-decoration: none
+        font-size: 17px
+        color: #ffffff  
+    &-button
+        // погуглить 
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        // ?
+        background-color: transparent 
+        border: none
+        border-right: 1.5px solid rgba(#510bba, 0.1 ) 
+        border-left: 1.5px solid rgba(#510bba, 0.1 )
+        height: 80px 
+        width: 70px 
+        &__line
+            display: block
+            width: 20px
+            height: 3px
+            background-color: #89a9eb
+            margin: 2px 0
+.logo
+    &__text
+        font-size: 18px
+        text-transform: uppercase
+        display: block
+        margin-bottom: 4px
+        +bold 
+    &__description
+        display: block
+        font-size: 14px
+        color: $text-color-light
