@@ -913,6 +913,11 @@ input[type="checkbox"]:checked + label:before {
   }
 }
 
+.contacts {
+  padding-bottom: 35px;
+  background-color: #f6f7f9;
+}
+
 .contacts-block {
   display: -webkit-box;
   display: -ms-flexbox;
